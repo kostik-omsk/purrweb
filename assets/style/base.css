@@ -1,0 +1,107 @@
+body {
+  font-family: 'Outfit';
+}
+
+.bg-dark {
+  background-color: var(--grayscale-01);
+}
+
+.bg-light {
+  background-color: var(--grayscale-07);
+}
+
+/* tipography */
+.t1,
+.t2,
+.t3,
+.t4 {
+  font-weight: 700;
+  line-height: 106%;
+}
+
+.t1 {
+  font-size: var(--font-size-xxxl);
+}
+
+.t2 {
+  font-size: var(--font-size-xxl);
+}
+
+.t3 {
+  font-size: var(--font-size-xl);
+}
+
+.t4 {
+  font-size: var(--font-size-lg);
+}
+
+.t4-semi-bold {
+  line-height: 60px;
+}
+
+.s1-semi-bold {
+  font-size: var(--font-size-md);
+}
+
+.s2-semi-bold,
+.s3-regular {
+  font-size: var(--font-size-sm);
+}
+
+.s4-semi-bold,
+.s5-medium,
+.s6-regular,
+.s7-light {
+  font-size: var(--font-size-20);
+}
+
+.t4-semi-bold,
+.s1-semi-bold,
+.s2-semi-bold,
+.s4-semi-bold {
+  font-weight: 600;
+}
+
+.s3-regular,
+.s6-regular,
+.b2-regular,
+.b3-regular,
+.b7-regular {
+  font-weight: 400;
+}
+
+.s5-medium,
+.b1-medium,
+.b3-medium {
+  font-weight: 500;
+}
+
+.s7-light,
+.b5-light,
+.b6-light {
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.s2-semi-bold,
+.s3-regular,
+.s6-light {
+  line-height: 120%;
+}
+
+.b1-medium,
+.b2-regular {
+  font-size: var(--font-size-16);
+}
+
+.b3-medium,
+.b4-regular,
+.b5-light,
+.b6-light {
+  font-size: var(--font-size-14);
+}
+
+.b7-regular {
+  font-size: var(--font-size-12);
+  line-height: 16px;
+}
