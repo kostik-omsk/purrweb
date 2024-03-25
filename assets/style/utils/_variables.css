@@ -1,0 +1,49 @@
+:root {
+  /* Grayscale colors */
+  --grayscale-00: #000000;
+  --grayscale-01: #181818;
+  --grayscale-02: #444444;
+  --grayscale-03: #b9b9b9;
+  --grayscale-04: #cfcfcf;
+  --grayscale-05: #e4e4e4;
+  --grayscale-06: #f5f5f5;
+  --grayscale-07: #ffffff;
+
+  /* Primary */
+  --primary-00: #7b31d4;
+  --primary-01: #954ced;
+  --primary-02: #a64ced;
+  --primary-03: #ba8bf3;
+  --primary-04: #954ced33;
+
+  /* Secondary */
+  --secondary-01: #2fdbbc;
+  --secondary-02: #ffaa4c;
+  --secondary-03: #c1db2f;
+
+  /* Additional */
+  --additional-01: #ff6c2d;
+  --additional-02: #ec1211;
+
+  /* font-size fix */
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-20: 20px;
+
+  /* font-size clamp */
+  --font-size-xs: clamp(1rem, 0.912rem + 0.376vw, 1.25rem); /* min 16px  max 20px */
+  --font-size-base: clamp(1rem, 0.824rem + 0.751vw, 1.5rem); /* min 16px  max 24px */
+  --font-size-sm: clamp(1.25rem, 1.162rem + 0.376vw, 1.5rem); /* min 20px  max 24px */
+  --font-size-md: clamp(1.5rem, 1.236rem + 1.127vw, 2.25rem); /* min 24px  max 36px */
+  --font-size-lg: clamp(2rem, 1.648rem + 1.502vw, 3rem); /* min 32px  max 48px */
+  --font-size-xl: clamp(2.5rem, 1.972rem + 2.254vw, 4rem); /* min 40px  max 64px */
+  --font-size-xxl: clamp(2.5rem, 1.268rem + 5.258vw, 6rem); /* min 40px  max 96px */
+  --font-size-xxxl: clamp(3rem, 1.239rem + 7.512vw, 8rem); /* min 48px  max 128px */
+
+  /* border-radius */
+  --border-radius-base: 16px;
+  --border-radius-md: 20px;
+  --border-radius-lg: 30px;
+  --border-radius-xl: 60px;
+}
