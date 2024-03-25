@@ -2,6 +2,32 @@ body {
   font-family: 'Outfit';
 }
 
+.container {
+  --padding-inlain: clamp(0.6rem, 3%, 1rem);
+  --content-max-width: 1440px;
+
+  display: grid;
+  grid-template-columns:
+    [full-width-start] minmax(var(--padding-inlain), 1fr)
+    [content-start] min(100% - (var(--padding-inlain) * 2), var(--content-max-width))
+    [content-end]
+    minmax(var(--padding-inlain), 1fr) [full-width-end];
+
+  overflow-x: hidden;
+}
+
+.container > :not(.full-width),
+.full-width > :not(.full-width) {
+  grid-column: content;
+}
+
+.container .full-width {
+  grid-column: full-width;
+  padding: var(--padding-inlain);
+  display: grid;
+  grid-template-columns: inherit;
+}
+
 .bg-dark {
   background-color: var(--grayscale-01);
 }
