@@ -1,5 +1,6 @@
 body {
   font-family: 'Outfit';
+  min-height: 100vh;
 }
 
 ul {
@@ -8,9 +9,25 @@ ul {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+.none {
+  display: none !important;
+}
+
+.visible {
+  visibility: hidden;
+}
+
+.lock {
+  overflow: hidden;
+}
+
 .container {
-  --padding-inlain: clamp(0.6rem, 3%, 1rem);
-  --content-max-width: 1440px;
+  --padding-inlain: clamp(1rem, 0.032rem + 4.131vw, 3.75rem);
+  --content-max-width: 1320px;
 
   display: grid;
   grid-template-columns:
@@ -18,7 +35,6 @@ ul {
     [content-start] min(100% - (var(--padding-inlain) * 2), var(--content-max-width))
     [content-end]
     minmax(var(--padding-inlain), 1fr) [full-width-end];
-  overflow-x: hidden;
 }
 
 .container > :not(.full-width),
@@ -28,7 +44,6 @@ ul {
 
 .container .full-width {
   grid-column: full-width;
-  padding: 0 var(--padding-inlain);
   display: grid;
   grid-template-columns: inherit;
 }
@@ -139,17 +154,12 @@ ul {
 
 /* buttons */
 
-.buttons {
-  margin: 20px;
-  display: flex;
-  gap: 20px;
-}
-
 .btn {
   padding: 16px 30px;
   border: 2px solid var(--primary-01);
   border-radius: var(--border-radius-base);
   color: var(--grayscale-07);
+  font-size: var(--font-size-20);
   outline: none;
   cursor: pointer;
   transition: background 0.3s ease, border-color 0.3s ease;
@@ -162,6 +172,12 @@ ul {
 .btn-primary:hover {
   background: var(--grayscale-01);
   border: 2px solid var(--grayscale-01);
+}
+
+.bg-dark .btn-primary:hover {
+  padding: 16px 30px;
+  background: var(--grayscale-01);
+  border: 2px solid var(--primary-01);
 }
 
 .btn-primary:focus {
@@ -197,4 +213,22 @@ ul {
   background: transparent;
   color: var(--grayscale-03);
   border: 2px solid var(--grayscale-03);
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 30px 16px 30px;
+  border: 1px solid var(--primary-01);
+  border-radius: var(--border-radius-base);
+}
+
+.btn-group .btn-link + .btn-link::before {
+  content: '';
+  display: inline-block;
+  height: 25px;
+  margin: 0 16px;
+  background: var(--grayscale-02);
+  border: 1px solid var(--grayscale-02);
 }

@@ -1,7 +1,3 @@
-.header.full-width {
-  padding: 0;
-}
-
 .header__tabs {
   background: var(--secondary-02);
 }
@@ -23,18 +19,99 @@
   background: var(--grayscale-01);
 }
 
-@media only screen and (min-width: 768px) {
-  .tabs__list {
-    margin-left: 60px;
+.header.fixed {
+  position: relative;
+  top: -38px;
+}
+
+.header__navbar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 71px;
+  width: 100%;
+}
+
+.header__menu {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .header__logo svg {
+    width: 125px;
+    height: 41px;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .header__tabs.full-width {
-    padding: 0;
+  .tabs.full-width > :not(.full-width) {
+    grid-column: 1 / -1;
   }
 
-  .header__tabs.full-width > :not(.full-width) {
-    grid-column: 1 / -1;
+  .header__control > :not(.control__burger) {
+    display: none;
+  }
+
+  .control__burger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    border-radius: 8px;
+    background: var(--grayscale-07);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .control__burger span + span {
+    margin-top: 7px;
+  }
+
+  .control__burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(0, 6px);
+  }
+
+  .control__burger.active span:nth-child(2) {
+    position: absolute;
+    transform: scaleX(0);
+  }
+
+  .control__burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(0, -6px);
+  }
+
+  .header__menu.open {
+    display: block;
+    position: fixed;
+    top: 71px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .menu {
+    height: 100vh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+  }
+
+  .menu .btn {
+    width: 100%;
+    margin-top: clamp(16px, -4.381rem + 24.027vh, 125px);
+    margin-bottom: clamp(16px, -7.17rem + 35.927vh, 177px);
+  }
+
+  .menu__item:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  .menu__link {
+    color: var(--grayscale-07);
   }
 }
