@@ -76,10 +76,26 @@
           </nav>
         </div>
       </div>
-       
     </div>
   </header>
-  <main></main>
+  <main class="main">
+    <div class="container">
+      <section class="hero breakout">
+          <div class="hero__info">
+            <h1 class="hero__title t2 text-white">Everyone is an Influencer</h1>
+            <p class="hero__text s3-regular text-white">Budss is a payments as a service and WOM engine dedicated to acquisition and retention of customers to your business.</p>
+            <button class="btn btn-primary s4-semi-bold">Contact sales</button>
+          </div>
+          <picture class="hero__image breakout">
+            <source type="image/webp" srcset="./assets/images/hero_mobile@2x.webp"  media="(min-resolution: 2dppx) and (max-width: 576px)">
+            <source type="image/webp" srcset="./assets/images/hero@2x.webp"  media="(min-resolution: 2dppx) ">
+            <source type="image/webp" srcset="./assets/images/hero_mobile.webp"  media="(max-width: 576px)">
+            <source type="image/webp" srcset="./assets/images/hero.webp">
+            <img src="./assets/images/hero.png" srcset="./assets/images/hero@2x.png, ./assets/images/hero_mobile.png, " alt="hero" width="595" height="529" loading="lazy" >
+          </picture>
+      </section>
+    </div>
+  </main>
   <footer></footer>
 </body>
 </html>

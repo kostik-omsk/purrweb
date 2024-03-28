@@ -13,6 +13,12 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .none {
   display: none !important;
 }
@@ -28,18 +34,30 @@ a {
 .container {
   --padding-inlain: clamp(1rem, 0.032rem + 4.131vw, 3.75rem);
   --content-max-width: 1320px;
+  --breakout-max-width: 1440px;
+
+  --breakout-size: calc(calc(var(--breakout-max-width) - var(--content-max-width)) / 2);
 
   display: grid;
   grid-template-columns:
+    [full-width-start] minmax(0, 1fr)
+    [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - (var(--padding-inlain) * 2), var(--content-max-width)) [content-end]
+    minmax(0, var(--breakout-size)) [breakout-end]
+    minmax(0, 1fr) [full-width-end];
+  /* grid-template-columns:
     [full-width-start] minmax(var(--padding-inlain), 1fr)
-    [content-start] min(100% - (var(--padding-inlain) * 2), var(--content-max-width))
-    [content-end]
-    minmax(var(--padding-inlain), 1fr) [full-width-end];
+    [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - (var(--padding-inlain) * 2), var(--content-max-width)) [content-end]
+    minmax(0, var(--breakout-size)) [breakout-end]
+    minmax(var(--padding-inlain), 1fr) [full-width-end]; */
 }
 
-.container > :not(.full-width),
-.full-width > :not(.full-width) {
+.container > :not(.breakout, .full-width),
+.full-width > :not(.breakout, .full-width) {
   grid-column: content;
+}
+
+.container > .breakout {
+  grid-column: breakout;
 }
 
 .container .full-width {
@@ -57,6 +75,10 @@ a {
 }
 
 /* tipography */
+.text-white {
+  color: var(--grayscale-07);
+}
+
 .t1,
 .t2,
 .t3,
