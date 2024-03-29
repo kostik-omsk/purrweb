@@ -4,3 +4,8 @@
 @import './base.css';
 @import './partial/header.css';
 @import './partial/hero.css';
+@import './partial/about.css';
+
+.main {
+  height: 300vh;
+}

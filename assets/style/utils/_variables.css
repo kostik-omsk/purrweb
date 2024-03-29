@@ -46,4 +46,9 @@
   --border-radius-md: 20px;
   --border-radius-lg: 30px;
   --border-radius-xl: 60px;
+
+  /* content max width */
+  --content-width: 1320px;
+  --breakout-width: 1440px;
+  --breakout-size-padding: calc(calc(var(--breakout-width) - var(--content-width)) / 2);
 }

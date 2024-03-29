@@ -1,6 +1,7 @@
 body {
   font-family: 'Outfit';
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 ul {
@@ -17,6 +18,10 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.main section + section {
+  margin-top: clamp(2.188rem, 0.757rem + 6.103vw, 6.25rem);
 }
 
 .none {
@@ -44,11 +49,6 @@ img {
     [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - (var(--padding-inlain) * 2), var(--content-max-width)) [content-end]
     minmax(0, var(--breakout-size)) [breakout-end]
     minmax(0, 1fr) [full-width-end];
-  /* grid-template-columns:
-    [full-width-start] minmax(var(--padding-inlain), 1fr)
-    [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - (var(--padding-inlain) * 2), var(--content-max-width)) [content-end]
-    minmax(0, var(--breakout-size)) [breakout-end]
-    minmax(var(--padding-inlain), 1fr) [full-width-end]; */
 }
 
 .container > :not(.breakout, .full-width),
