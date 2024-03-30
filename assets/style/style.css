@@ -5,7 +5,7 @@
 @import './partial/header.css';
 @import './partial/hero.css';
 @import './partial/about.css';
-
+@import './partial/work.css';
 .main {
   height: 300vh;
 }

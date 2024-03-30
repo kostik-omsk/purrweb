@@ -43,7 +43,7 @@
   display: grid;
   grid-template-columns: repeat(2, 336px);
   column-gap: 57px;
-  row-gap: 71px;
+  row-gap: 31px;
 }
 
 .about__item-title {
@@ -58,10 +58,16 @@
   font-size: var(--font-size-base);
 }
 
+.about__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 115px;
+}
 .about__image {
-  position: absolute;
-  margin-top: 115px;
-  left: calc(var(--breakout-size-padding) * -1);
+  position: relative;
+
+  margin-left: calc(var(--breakout-size-padding) * -1);
 }
 
 @media only screen and (min-width: 1440px) {

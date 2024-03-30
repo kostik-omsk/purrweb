@@ -60,6 +60,14 @@ img {
   grid-column: breakout;
 }
 
+.container > .full-width-window {
+  display: grid;
+  justify-items: center;
+  grid-column: 1 / -1;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+}
+
 .container .full-width {
   grid-column: full-width;
   display: grid;
