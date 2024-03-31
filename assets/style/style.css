@@ -6,6 +6,4 @@
 @import './partial/hero.css';
 @import './partial/about.css';
 @import './partial/work.css';
-.main {
-  height: 300vh;
-}
+@import './partial/percent.css';
