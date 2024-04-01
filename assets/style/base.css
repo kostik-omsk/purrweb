@@ -20,6 +20,15 @@ img {
   object-fit: cover;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 .main section + section {
   margin-top: clamp(2.188rem, 0.757rem + 6.103vw, 6.25rem);
 }
