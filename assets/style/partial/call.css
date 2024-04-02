@@ -1,0 +1,19 @@
+.call {
+  padding-top: clamp(2.3rem, 1.156rem + 5.66vw, 6.25rem);
+}
+.call__wrapper {
+  padding: clamp(2.2rem, 2.052rem + 1.887vw, 3.75rem) 18px;
+  border: 1px solid var(--grayscale-04);
+  border-radius: var(--border-radius-xl);
+  text-align: center;
+}
+.call__title {
+  margin-bottom: 40px;
+  letter-spacing: 1.3px;
+}
+
+@media only screen and (max-width: 576px) {
+  .call__wrapper .btn {
+    width: 100%;
+  }
+}
