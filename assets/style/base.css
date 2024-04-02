@@ -29,7 +29,8 @@ h6 {
   margin: 0;
 }
 
-.main section + section {
+.main section + section,
+.main section + div {
   margin-top: clamp(2.188rem, 0.757rem + 6.103vw, 6.25rem);
 }
 

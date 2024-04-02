@@ -1,0 +1,52 @@
+.digitalMarketing__wrapper {
+  display: flex;
+}
+
+.digitalMarketing__title {
+  margin-bottom: 17px;
+  letter-spacing: 1.8px;
+}
+
+.digitalMarketing__text {
+  margin-top: 0;
+  max-width: 537px;
+  line-height: 120%;
+}
+
+.digitalMarketing__icons {
+  margin-top: 41px;
+  flex: 1 0 35%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.digitalMarketing__icon:nth-child(even) {
+  margin-top: 92px;
+}
+
+@media only screen and (max-width: 820px) {
+  .digitalMarketing__wrapper {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .digitalMarketing__title {
+    margin-bottom: 19px;
+    letter-spacing: 1px;
+  }
+  .digitalMarketing__text {
+    max-width: 340px;
+  }
+  .digitalMarketing__icons {
+    margin-top: 0px;
+  }
+
+  .digitalMarketing__icon svg {
+    width: 64px;
+    height: 64px;
+  }
+  .digitalMarketing__icon:nth-child(even) {
+    margin-top: 65px;
+  }
+}
