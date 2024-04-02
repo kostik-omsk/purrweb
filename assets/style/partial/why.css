@@ -208,5 +208,6 @@
 @media only screen and (max-width: 576px) {
   .why {
     margin-top: 82px !important;
+    margin-bottom: 46px;
   }
 }
