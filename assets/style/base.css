@@ -202,15 +202,18 @@ h6 {
   font-size: var(--font-size-20);
   outline: none;
   cursor: pointer;
-  transition: background 0.3s ease, border-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn-primary {
+  position: relative;
+  overflow: hidden;
   background: var(--primary-01);
 }
 
 .btn-primary:hover {
-  background: var(--grayscale-01);
+  background: initial;
+  transform: scale(1.07);
   border: 2px solid var(--grayscale-01);
 }
 
@@ -238,9 +241,11 @@ h6 {
 
 .btn-secondary {
   background: transparent;
+  overflow: hidden;
 }
 
 .btn-secondary:hover {
+  transform: scale(1.07);
   background: var(--primary-04);
 }
 
@@ -253,6 +258,36 @@ h6 {
   background: transparent;
   color: var(--grayscale-03);
   border: 2px solid var(--grayscale-03);
+}
+
+.btn-secondary:hover:after,
+.btn-primary:hover:after {
+  transform: translate(0);
+}
+
+.btn-secondary:after,
+.btn-primary:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%) rotate(10deg);
+  transform-origin: top left;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, fill 0.2s ease, transform 0.2s ease-in-out;
+  will-change: transform;
+  z-index: -1;
+  border-radius: var(--border-radius-base);
+}
+
+.btn-secondary:after {
+  background: var(--primary-04);
+}
+
+.btn-primary:after {
+  background: var(--grayscale-01);
 }
 
 .btn-group {
