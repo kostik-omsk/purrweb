@@ -30,7 +30,8 @@ h6 {
 }
 
 .main section + section,
-.main section + div {
+.main section + div,
+.main div + section {
   margin-top: clamp(2.188rem, 0.757rem + 6.103vw, 6.25rem);
 }
 
@@ -244,6 +245,11 @@ h6 {
   overflow: hidden;
 }
 
+.bg-light .btn-secondary {
+  overflow: hidden;
+  color: var(--grayscale-01);
+}
+
 .btn-secondary:hover {
   transform: scale(1.07);
   background: var(--primary-04);
@@ -279,11 +285,19 @@ h6 {
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, fill 0.2s ease, transform 0.2s ease-in-out;
   will-change: transform;
   z-index: -1;
-  border-radius: var(--border-radius-base);
+  border-radius: 13px;
 }
 
 .btn-secondary:after {
   background: var(--primary-04);
+}
+
+.bg-light .btn-secondary:after {
+  background: var(--primary-01);
+}
+
+.bg-light .btn-secondary:hover {
+  color: var(--grayscale-07);
 }
 
 .btn-primary:after {
@@ -306,4 +320,43 @@ h6 {
   margin: 0 16px;
   background: var(--grayscale-02);
   border: 1px solid var(--grayscale-02);
+}
+
+.btn-close {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  width: 26px;
+  height: 26px;
+  top: 16px;
+  right: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-close::before,
+.btn-close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 2px;
+  background-color: var(--grayscale-03);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.btn-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.btn-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.btn-close:hover::before,
+.btn-close:hover::after {
+  background-color: var(--primary-01);
 }
