@@ -13,7 +13,12 @@ export default function controlMenuMobile() {
       TABS.classList.toggle('none');
       LOGO.classList.toggle('visible');
       MENU.classList.toggle('open');
-      BODY.classList.toggle('lock');
+    }
+
+    if (MENU.classList.contains('open')) {
+      BODY.classList.add('lock');
+    } else {
+      BODY.classList.remove('lock');
     }
   });
 

@@ -2,6 +2,7 @@ body {
   font-family: 'Outfit';
   min-height: 100vh;
   overflow-x: hidden;
+  color: var(--grayscale-00);
 }
 
 ul {
@@ -238,6 +239,7 @@ h6 {
 .btn-primary:disabled {
   background: var(--grayscale-03);
   border: 2px solid var(--grayscale-03);
+  pointer-events: none;
 }
 
 .btn-secondary {

@@ -97,13 +97,12 @@
     left: 0;
     right: 0;
     bottom: 0;
+    background: var(--grayscale-01);
+    z-index: 100;
   }
 
   .menu {
     height: 100vh;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; */
   }
 
   .menu .btn {

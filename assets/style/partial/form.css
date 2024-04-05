@@ -1,0 +1,110 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form__required {
+  color: var(--additional-01);
+}
+
+.form__input {
+  padding: 10px 16px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+  border-radius: 14px;
+  font-size: var(--font-size-14);
+  outline: none;
+}
+
+.form__phone-country {
+  position: absolute;
+  top: 36px;
+  left: 16px;
+  width: 22px;
+  height: 16px;
+  background: url('../../images/russian-federation.png') no-repeat;
+  background-size: contain;
+  z-index: 9999;
+}
+
+.form__phone-country ~ .form__input {
+  padding-left: 42px;
+}
+
+.form__phone {
+  position: relative;
+}
+
+._error {
+  border: 1px solid var(--additional-02);
+}
+
+.form__input:focus {
+  border: 1px solid #a7a7a7;
+}
+
+.form__text {
+  margin: 0;
+}
+
+.form__text a {
+  color: var(--primary-02);
+  text-decoration-line: underline;
+}
+.form__button {
+  margin-right: auto;
+}
+
+.form__error {
+  color: var(--additional-02);
+  margin: 0 0 4px 0;
+}
+
+.modal__success.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.success__title {
+  margin-top: 23px;
+  color: var(--primary-02);
+}
+
+.success__text {
+  text-align: center;
+  color: var(--grayscale-02);
+}
+
+.success__button {
+  width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .success__image {
+    width: 229px;
+    height: 179px;
+  }
+
+  .modal__success.success {
+    padding: 20px;
+  }
+
+  .success__text {
+    min-width: 295px;
+  }
+}

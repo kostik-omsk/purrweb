@@ -53,7 +53,7 @@
           </div>
           <div class="header__control">
             <div class="control__business">
-              <button class="btn btn-primary s4-semi-bold">Contact sales</button>
+              <button class="btn btn-primary s4-semi-bold " data-modal="open">Contact sales</button>
             </div>
             <div class="control__customers none">
               <div class="btn-group">
@@ -102,7 +102,7 @@
       <div class="header__menu">
         <div class="container">
           <div class="menu">
-            <button class="btn btn-primary s4-semi-bold">Contact sales</button>
+            <button class="btn btn-primary s4-semi-bold" data-modal="open">Contact sales</button>
             <nav class="menu__nav">
               <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link s5-medium" href="#">For Business</a></li>
@@ -124,7 +124,7 @@
             <p class="hero__text s3-regular text-white">
               Budss is a payments as a service and WOM engine dedicated to acquisition and retention of customers to your business.
             </p>
-            <button class="btn btn-primary s4-semi-bold">Contact sales</button>
+            <button class="btn btn-primary s4-semi-bold" data-modal="open">Contact sales</button>
           </div>
           <picture class="hero__image">
             <source
@@ -417,7 +417,7 @@
           <section class="call">
             <div class="call__wrapper">
               <h3 class="call__title t3">Let Your Business Grow</h3>
-              <button class="btn btn-primary s4-semi-bold">Contact sales</button>
+              <button class="btn btn-primary s4-semi-bold" data-modal="open">Contact sales</button>
             </div>
           </section>
           <section class="digitalMarketing">
@@ -614,7 +614,7 @@
               </ul>
             </nav>
             <div class="footer__btns">
-              <button class="btn btn-secondary s4-semi-bold">Contact sales</button>
+              <button class="btn btn-secondary s4-semi-bold" data-modal="open">Contact sales</button>
               <div class="footer__store">
                 <a href="https://www.apple.com/app-store/" target="_blank" class="footer__store-link">
                   <picture>
@@ -666,6 +666,47 @@
         <div class="cookie__buttons">
           <button class="cookie__button btn btn-primary s4-semi-bold">Accept</button>
           <button class="cookie__button btn btn-secondary s4-semi-bold">Decline</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__content">
+        <button class="modal__close btn-close"></button>
+        <form class="modal__form form">
+          <div class="form__fields">
+            <div class="form__field">
+              <label class="form__label b3-medium" for="name">Name <span class="form__required">*</span></label>
+              <input class="form__input" type="text" name="name" id="name"  placeholder="Enter name">
+            </div>
+            <div class="form__field">
+              <label class="form__label b3-medium" for="email">Email <span class="form__required">*</span></label>
+              <input class="form__input" type="email" name="email" id="email"  placeholder="Enter email">
+            </div>
+            <div class="form__field">
+              <label class="form__label b3-medium" for="phone">Phone number <span class="form__required">*</span></label>
+              <div class="form__phone-country"></div>
+              <input class="form__input" type="tel" name="phone" id="phone" maxlength="18" placeholder="+7 (999) 999-99-99" >
+            </div>
+            <div class="form__field">
+              <label class="form__label b3-medium" for="company">Company</label>
+              <input class="form__input" type="text" name="company" id="company" placeholder="Enter company">
+            </div>
+            <div class="form__field">
+              <label class="form__label b3-medium" for="website/store">Website/Store URL</label>
+              <input class="form__input" type="text" name="website/store" id="website/store" placeholder="Enter Website/Store URL">
+            </div>
+          </div>
+          <p class="form__text approval b5-light">By submitting this form you are agreeing to Budss’s <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a></p>
+          <button type="submit" class="form__button btn btn-primary s4-semi-bold">Contact sales</button>
+        </form>
+        <div class="modal__success success none">
+          <picture class="success__image">
+            <source type="image/webp" srcset="assets/images/success.webp 1x, assets/images/success@2x.webp 2x" >
+            <img src="assets/images/success.png" srcset="assets/images/success.png, assets/images/success@2x.png 2x" alt="success" loading="lazy" width="297" height="232">
+          </picture>
+          <h3 class="success__title s1-semi-bold">Thank you!</h3>
+          <p class="success__text s3-regular">Thank you, we have received your application and will contact you soon!</p>
+          <button class="success__button btn btn-primary s4-semi-bold">Super!</button>
         </div>
       </div>
     </div>
