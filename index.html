@@ -252,8 +252,9 @@
           <div class="work__smartphone smartphone">
             <div class="smartphone__wrapper">
               <video loop muted autoplay class="smartphone__video">
-                <source src="assets/video/phone.mp4" type="video/mp4">
+                <source src="assets/video/phone.mp4" type="video/mp4" >
                 <source src="assets/video/phone.webm" type="video/webm">
+                <source src="assets/images/phone-video.gif" type="video/gif" media="(max-width: 576px)">
               </video>
             </div>
           </div>
@@ -677,16 +678,16 @@
           <div class="form__fields">
             <div class="form__field">
               <label class="form__label b3-medium" for="name">Name <span class="form__required">*</span></label>
-              <input class="form__input" type="text" name="name" id="name"  placeholder="Enter name">
+              <input class="form__input" type="text" name="name" id="name"  placeholder="Enter name" autocomplete="off">
             </div>
             <div class="form__field">
               <label class="form__label b3-medium" for="email">Email <span class="form__required">*</span></label>
-              <input class="form__input" type="email" name="email" id="email"  placeholder="Enter email">
+              <input class="form__input" type="email" name="email" id="email"  placeholder="Enter email" autocomplete="off">
             </div>
             <div class="form__field">
               <label class="form__label b3-medium" for="phone">Phone number <span class="form__required">*</span></label>
               <div class="form__phone-country"></div>
-              <input class="form__input" type="tel" name="phone" id="phone" maxlength="18" placeholder="+7 (999) 999-99-99" >
+              <input class="form__input" type="tel" name="phone" id="phone" maxlength="18" placeholder="+7 (999) 999-99-99" autocomplete="off">
             </div>
             <div class="form__field">
               <label class="form__label b3-medium" for="company">Company</label>
