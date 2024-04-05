@@ -1,6 +1,6 @@
 @import './vendor/normalize.css';
-@import './utils/_fonts.css';
-@import './utils/_variables.css';
+@import './utils/fonts.css';
+@import './utils/variables.css';
 @import './base.css';
 @import './partial/header.css';
 @import './partial/hero.css';
