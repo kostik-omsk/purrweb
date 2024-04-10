@@ -1,8 +1,12 @@
 # Выполненное тестовое задание "Business" от Purrweb
 
-Верстка по [шаблону Figma](<https://www.figma.com/file/SinVa5DhtxfjLxeMlSDRNO/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-(frontend)?t=qWNWsCLl7MOBlaG8-6>)
+ [deploy website](https://kostik-omsk.github.io/purrweb/)
+ 
+ [deploy slider](https://kostik-omsk.github.io/purrweb/slider)
 
-## Основные задания:
+##Верстка по [шаблону Figma](<https://www.figma.com/file/SinVa5DhtxfjLxeMlSDRNO/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-(frontend)?t=qWNWsCLl7MOBlaG8-6>)
+
+### Основные задания:
 
 - Верстка должна быть сделана с помощью чистых html/css/js без использования сторонних библиотек или фреймворков;
 - Верстка должна быть адаптивной и корректно отображаться в актуальных версиях Google Chrome и Firefox;
@@ -12,7 +16,7 @@
 - Валидация формы в модальном окне, обязательные поля помечены звездочкой (проверка полей только на пустоту);
 - Реализовать все состояния на компонентах из ui-kit, кроме загрузочных.
 
-## Дополнительные задания:
+### Дополнительные задания:
 
 - Реализация резиновой верстки;
 - Использование современных форматов шрифтов (woff2, woff);
