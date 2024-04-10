@@ -1,0 +1,134 @@
+.about {
+  position: relative;
+}
+
+.about__title {
+  margin-top: 0px;
+  margin-bottom: 43px;
+  letter-spacing: 1.9px;
+}
+
+.about__content {
+  display: flex;
+  gap: clamp(1.1rem, -49.416rem + 63.102vw, 7.375rem);
+}
+
+.about__subtitle {
+  max-width: 410px;
+  line-height: 120%;
+  letter-spacing: 0.4px;
+}
+
+.decoration {
+  position: relative;
+  display: inline-block;
+}
+
+.decoration::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 107%;
+  height: 90%;
+  background: var(--primary-02);
+  border-radius: var(--border-radius-lg);
+  transform: rotate(-2deg) translate(-49%, -50%);
+  z-index: -1;
+}
+
+.about__list {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 336px);
+  column-gap: 57px;
+  row-gap: 31px;
+}
+
+.about__item-title {
+  margin-top: 6px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.about__item-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: var(--font-size-base);
+}
+
+.about__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 115px;
+}
+.about__image {
+  position: relative;
+
+  margin-left: calc(var(--breakout-size-padding) * -1);
+}
+
+@media only screen and (min-width: 1440px) {
+  .about__image::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: calc((100vw - 1440px) / -2);
+    display: block;
+    width: calc((100vw - 1438px) / 2);
+    height: 10.65rem;
+    background: #b97e3c;
+  }
+
+  .about__image::after {
+    content: '';
+    position: absolute;
+    bottom: 61px;
+    left: calc((100vw - 1440px) / -2);
+    display: block;
+    width: calc((100vw - 1438px) / 2);
+    height: 10.65rem;
+    background: #ac5bb8;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .about__content {
+    flex-direction: column;
+  }
+
+  .about__list {
+    margin: 0 auto;
+  }
+
+  .about__image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about__list {
+    margin: 0 auto;
+    grid-template-columns: auto;
+    row-gap: 60px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about__title {
+    margin-bottom: 7px;
+    letter-spacing: 1px;
+  }
+
+  .about__item-title {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    letter-spacing: 0.6px;
+  }
+
+  .about__subtitle {
+    padding-right: 60px;
+  }
+}

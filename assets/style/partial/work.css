@@ -1,0 +1,133 @@
+.work {
+  position: relative;
+  padding-top: 7px;
+  padding-bottom: 6px;
+}
+
+.work__smartphone {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 308px;
+  height: 623px;
+  background: url('../../images/phone.png') no-repeat;
+  background-size: contain;
+}
+
+.smartphone__wrapper {
+  width: 275px;
+  height: 598px;
+  border-radius: 38px;
+  overflow: hidden;
+}
+
+.smartphone__video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 9/16;
+  z-index: -1;
+}
+
+.work__marquee {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 1920px;
+  height: 100%;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+  z-index: -2;
+}
+
+.work__marquee .marquee:nth-child(1) {
+  color: var(--secondary-01);
+}
+.work__marquee .marquee:nth-child(2) {
+  color: var(--primary-01);
+}
+.work__marquee .marquee:nth-child(3) {
+  color: var(--secondary-03);
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.marquee__group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  animation: running-text 45s linear infinite;
+}
+
+.marquee__group-reverse {
+  animation: running-text-reverse 40s linear infinite;
+}
+
+.work__marquee .marquee:nth-child(3) .marquee__group {
+  color: var(--secondary-03);
+  animation: running-text 35s linear infinite;
+}
+
+.marquee__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+  display: flex;
+}
+
+.marquee__text-contour {
+  color: var(--grayscale-01);
+  text-shadow: 1px 1px 0px var(--grayscale-02), -1px -1px 0px var(--grayscale-02), 1px -1px 0px var(--grayscale-02),
+    -1px 1px 0px var(--grayscale-02);
+}
+
+@keyframes running-text {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes running-text-reverse {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media only screen and (min-resolution: 2dppx) {
+  .work__smartphone {
+    background: url('../../images/phone@x2.png') no-repeat;
+    background-size: contain;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .work {
+    margin-top: 75px !important;
+  }
+
+  .work__smartphone {
+    width: 228px;
+    height: 461px;
+  }
+
+  .smartphone__wrapper {
+    width: 205px;
+    height: 444px;
+    border-radius: 20.27px;
+  }
+}

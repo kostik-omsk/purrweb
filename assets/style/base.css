@@ -1,0 +1,364 @@
+body {
+  font-family: 'Outfit';
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: var(--grayscale-00);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.main section + section,
+.main section + div,
+.main div + section {
+  margin-top: clamp(2.188rem, 0.757rem + 6.103vw, 6.25rem);
+}
+
+.none {
+  display: none !important;
+}
+
+.visible {
+  visibility: hidden;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.container {
+  --padding-inlain: clamp(1rem, 0.032rem + 4.131vw, 3.75rem);
+  --content-max-width: 1320px;
+  --breakout-max-width: 1440px;
+
+  --breakout-size: calc(calc(var(--breakout-max-width) - var(--content-max-width)) / 2);
+
+  display: grid;
+  grid-template-columns:
+    [full-width-start] minmax(0, 1fr)
+    [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - (var(--padding-inlain) * 2), var(--content-max-width)) [content-end]
+    minmax(0, var(--breakout-size)) [breakout-end]
+    minmax(0, 1fr) [full-width-end];
+}
+
+.container > :not(.breakout, .full-width),
+.full-width > :not(.breakout, .full-width) {
+  grid-column: content;
+}
+
+.container > .breakout {
+  grid-column: breakout;
+}
+
+.container > .full-width-window {
+  display: grid;
+  justify-items: center;
+  grid-column: 1 / -1;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+}
+
+.container .full-width {
+  grid-column: full-width;
+  display: grid;
+  grid-template-columns: inherit;
+}
+
+.bg-dark {
+  background-color: var(--grayscale-01);
+}
+
+.bg-light {
+  background-color: var(--grayscale-07);
+}
+
+/* tipography */
+.text-white {
+  color: var(--grayscale-07);
+}
+
+.t1,
+.t2,
+.t3,
+.t4 {
+  font-weight: 700;
+  line-height: 106%;
+}
+
+.t1 {
+  font-size: var(--font-size-xxxl);
+}
+
+.t2 {
+  font-size: var(--font-size-xxl);
+}
+
+.t3 {
+  font-size: var(--font-size-xl);
+}
+
+.t4 {
+  font-size: var(--font-size-lg);
+}
+
+.t4-semi-bold {
+  line-height: 60px;
+}
+
+.s1-semi-bold {
+  font-size: var(--font-size-md);
+}
+
+.s2-semi-bold,
+.s3-regular {
+  font-size: var(--font-size-sm);
+}
+
+.s4-semi-bold,
+.s5-medium,
+.s6-regular,
+.s7-light {
+  font-size: var(--font-size-20);
+}
+
+.t4-semi-bold,
+.s1-semi-bold,
+.s2-semi-bold,
+.s4-semi-bold {
+  font-weight: 600;
+}
+
+.s3-regular,
+.s6-regular,
+.b2-regular,
+.b3-regular,
+.b7-regular {
+  font-weight: 400;
+}
+
+.s5-medium,
+.b1-medium,
+.b3-medium {
+  font-weight: 500;
+}
+
+.s7-light,
+.b5-light,
+.b6-light {
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.s2-semi-bold,
+.s3-regular,
+.s6-light {
+  line-height: 120%;
+}
+
+.b1-medium,
+.b2-regular {
+  font-size: var(--font-size-16);
+}
+
+.b3-medium,
+.b4-regular,
+.b5-light,
+.b6-light {
+  font-size: var(--font-size-14);
+}
+
+.b7-regular {
+  font-size: var(--font-size-12);
+  line-height: 16px;
+}
+
+/* buttons */
+
+.btn {
+  padding: 16px 30px;
+  border: 2px solid var(--primary-01);
+  border-radius: var(--border-radius-base);
+  color: var(--grayscale-07);
+  font-size: var(--font-size-20);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+  background: var(--primary-01);
+}
+
+.btn-primary:hover {
+  background: initial;
+  transform: scale(1.07);
+  border: 2px solid var(--grayscale-01);
+}
+
+.bg-dark .btn-primary:hover {
+  padding: 16px 30px;
+  background: var(--grayscale-01);
+  border: 2px solid var(--primary-01);
+}
+
+.btn-primary:focus {
+  padding: 14px 28px;
+  border: 4px solid var(--primary-03);
+}
+
+.btn-primary:active {
+  padding: 16px 30px;
+  background: var(--primary-00);
+  border: 2px solid var(--primary-00);
+}
+
+.btn-primary:disabled {
+  background: var(--grayscale-03);
+  border: 2px solid var(--grayscale-03);
+  pointer-events: none;
+}
+
+.btn-secondary {
+  background: transparent;
+  overflow: hidden;
+}
+
+.bg-light .btn-secondary {
+  overflow: hidden;
+  color: var(--grayscale-01);
+}
+
+.btn-secondary:hover {
+  transform: scale(1.07);
+  background: var(--primary-04);
+}
+
+.btn-secondary:active {
+  background: transparent;
+  border: 2px solid var(--primary-02);
+}
+
+.btn-secondary:disabled {
+  background: transparent;
+  color: var(--grayscale-03);
+  border: 2px solid var(--grayscale-03);
+}
+
+.btn-secondary:hover:after,
+.btn-primary:hover:after {
+  transform: translate(0);
+}
+
+.btn-secondary:after,
+.btn-primary:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%) rotate(10deg);
+  transform-origin: top left;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, fill 0.2s ease, transform 0.2s ease-in-out;
+  will-change: transform;
+  z-index: -1;
+  border-radius: 13px;
+}
+
+.btn-secondary:after {
+  background: var(--primary-04);
+}
+
+.bg-light .btn-secondary:after {
+  background: var(--primary-01);
+}
+
+.bg-light .btn-secondary:hover {
+  color: var(--grayscale-07);
+}
+
+.btn-primary:after {
+  background: var(--grayscale-01);
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 30px 16px 30px;
+  border: 1px solid var(--primary-01);
+  border-radius: var(--border-radius-base);
+}
+
+.btn-group .btn-link + .btn-link::before {
+  content: '';
+  display: inline-block;
+  height: 25px;
+  margin: 0 16px;
+  background: var(--grayscale-02);
+  border: 1px solid var(--grayscale-02);
+}
+
+.btn-close {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  width: 26px;
+  height: 26px;
+  top: 16px;
+  right: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-close::before,
+.btn-close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 2px;
+  background-color: var(--grayscale-03);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.btn-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.btn-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.btn-close:hover::before,
+.btn-close:hover::after {
+  background-color: var(--primary-01);
+}

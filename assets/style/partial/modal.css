@@ -1,0 +1,31 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
+}
+
+.modal._show {
+  display: flex;
+  z-index: 9999;
+}
+
+.modal__content {
+  position: absolute;
+  padding: 40px;
+  max-width: 417px;
+  background: var(--grayscale-07);
+  border-radius: var(--border-radius-base);
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 576px) {
+  .modal__content {
+    max-width: 335px;
+    padding: 20px;
+  }
+}

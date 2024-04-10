@@ -1,0 +1,17 @@
+@import './vendor/normalize.css';
+@import './utils/fonts.css';
+@import './utils/variables.css';
+@import './base.css';
+@import './partial/header.css';
+@import './partial/hero.css';
+@import './partial/about.css';
+@import './partial/work.css';
+@import './partial/percent.css';
+@import './partial/why.css';
+@import './partial/call.css';
+@import './partial/digitalMarketing.css';
+@import './partial/logos.css';
+@import './partial/footer.css';
+@import './partial/cookie.css';
+@import './partial/modal.css';
+@import './partial/form.css';

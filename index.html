@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+    <title>budss</title>
+  </head>
+  <body class="bg-dark">
+    <header class="header">
+      <div class="header__tabs">
+        <div class="container">
+          <nav class="tabs full-width">
+            <ul class="tabs__list">
+              <li class="tabs__item tabs__item-active b1-medium" data-tabs="business">For Business</li>
+              <li class="tabs__item b1-medium" data-tabs="customers">For Customers</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header__navbar bg-dark container">
+        <div class="header__wrap">
+          <div class="header__logo">
+            <a href="#">
+              <svg width="157" height="53" viewBox="0 0 157 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M60.2756 40.2208C58.9929 40.2208 57.8336 39.9495 56.7976 39.4068C55.7616 38.8642 54.9352 38.1242 54.3186 37.1868C53.7019 36.2495 53.3689 35.2012 53.3196 34.0418V27.6778C53.3689 26.5185 53.7019 25.4825 54.3186 24.5698C54.9599 23.6325 55.7986 22.9048 56.8346 22.3868C57.8706 21.8688 59.0176 21.6098 60.2756 21.6098C61.9282 21.6098 63.4082 22.0168 64.7156 22.8308C66.0229 23.6448 67.0466 24.7548 67.7866 26.1608C68.5512 27.5668 68.9336 29.1578 68.9336 30.9338C68.9336 32.6852 68.5512 34.2638 67.7866 35.6698C67.0466 37.0758 66.0229 38.1858 64.7156 38.9998C63.4082 39.8138 61.9282 40.2208 60.2756 40.2208ZM59.4616 35.7438C60.3496 35.7438 61.1266 35.5465 61.7926 35.1518C62.4832 34.7325 63.0136 34.1652 63.3836 33.4498C63.7782 32.7098 63.9756 31.8588 63.9756 30.8968C63.9756 29.9595 63.7782 29.1332 63.3836 28.4178C63.0136 27.6778 62.4832 27.1105 61.7926 26.7158C61.1019 26.2965 60.3126 26.0868 59.4246 26.0868C58.5366 26.0868 57.7472 26.2965 57.0566 26.7158C56.3906 27.1105 55.8602 27.6778 55.4656 28.4178C55.0956 29.1332 54.9106 29.9595 54.9106 30.8968C54.9106 31.8588 55.0956 32.7098 55.4656 33.4498C55.8602 34.1652 56.4029 34.7325 57.0936 35.1518C57.7842 35.5465 58.5736 35.7438 59.4616 35.7438ZM50.3596 39.8508V13.0998H55.2066V26.3828L54.3926 30.6748L55.1696 35.0408V39.8508H50.3596ZM79.7335 40.2208C78.1549 40.2208 76.7489 39.8878 75.5155 39.2218C74.3069 38.5558 73.3572 37.6308 72.6665 36.4468C71.9759 35.2628 71.6305 33.8938 71.6305 32.3398V21.9798H76.5145V32.2288C76.5145 32.9688 76.6379 33.6102 76.8845 34.1528C77.1312 34.6708 77.5012 35.0655 77.9945 35.3368C78.4879 35.6082 79.0675 35.7438 79.7335 35.7438C80.7449 35.7438 81.5342 35.4355 82.1015 34.8188C82.6689 34.2022 82.9525 33.3388 82.9525 32.2288V21.9798H87.7995V32.3398C87.7995 33.9185 87.4542 35.2998 86.7635 36.4838C86.0975 37.6678 85.1479 38.5928 83.9145 39.2588C82.7059 39.9002 81.3122 40.2208 79.7335 40.2208ZM99.2074 40.2208C97.5547 40.2208 96.0747 39.8138 94.7674 38.9998C93.46 38.1858 92.424 37.0758 91.6594 35.6698C90.9194 34.2638 90.5494 32.6852 90.5494 30.9338C90.5494 29.1578 90.9194 27.5668 91.6594 26.1608C92.424 24.7548 93.4477 23.6448 94.7304 22.8308C96.0377 22.0168 97.53 21.6098 99.2074 21.6098C100.49 21.6098 101.637 21.8688 102.648 22.3868C103.684 22.9048 104.511 23.6325 105.127 24.5698C105.769 25.4825 106.114 26.5185 106.163 27.6778V34.0418C106.114 35.2012 105.781 36.2495 105.164 37.1868C104.548 38.1242 103.721 38.8642 102.685 39.4068C101.649 39.9495 100.49 40.2208 99.2074 40.2208ZM100.021 35.7438C100.934 35.7438 101.723 35.5465 102.389 35.1518C103.08 34.7325 103.61 34.1652 103.98 33.4498C104.375 32.7098 104.572 31.8588 104.572 30.8968C104.572 29.9595 104.375 29.1332 103.98 28.4178C103.61 27.6778 103.08 27.1105 102.389 26.7158C101.723 26.2965 100.946 26.0868 100.058 26.0868C99.1457 26.0868 98.344 26.2965 97.6534 26.7158C96.9874 27.1352 96.457 27.7025 96.0624 28.4178C95.6924 29.1332 95.5074 29.9595 95.5074 30.8968C95.5074 31.8588 95.6924 32.7098 96.0624 33.4498C96.457 34.1652 96.9997 34.7325 97.6904 35.1518C98.381 35.5465 99.158 35.7438 100.021 35.7438ZM109.123 39.8508H104.313V35.0408L105.09 30.6748L104.276 26.3828V13.0998H109.123V39.8508ZM119.553 40.2578C118.542 40.2578 117.543 40.1222 116.556 39.8508C115.594 39.5795 114.706 39.2095 113.892 38.7408C113.078 38.2475 112.375 37.6555 111.783 36.9648L114.669 34.0418C115.286 34.7325 116.001 35.2505 116.815 35.5958C117.629 35.9412 118.53 36.1138 119.516 36.1138C120.306 36.1138 120.898 36.0028 121.292 35.7808C121.712 35.5588 121.921 35.2258 121.921 34.7818C121.921 34.2885 121.699 33.9062 121.255 33.6348C120.836 33.3635 120.281 33.1415 119.59 32.9688C118.9 32.7715 118.172 32.5618 117.407 32.3398C116.667 32.0932 115.952 31.7848 115.261 31.4148C114.571 31.0202 114.003 30.4898 113.559 29.8238C113.14 29.1332 112.93 28.2452 112.93 27.1598C112.93 26.0252 113.202 25.0385 113.744 24.1998C114.312 23.3612 115.113 22.7075 116.149 22.2388C117.185 21.7702 118.406 21.5358 119.812 21.5358C121.292 21.5358 122.624 21.7948 123.808 22.3128C125.017 22.8308 126.016 23.6078 126.805 24.6438L123.882 27.5668C123.34 26.9008 122.723 26.4198 122.032 26.1238C121.366 25.8278 120.639 25.6798 119.849 25.6798C119.134 25.6798 118.579 25.7908 118.184 26.0128C117.814 26.2348 117.629 26.5432 117.629 26.9378C117.629 27.3818 117.839 27.7272 118.258 27.9738C118.702 28.2205 119.27 28.4425 119.96 28.6398C120.651 28.8125 121.366 29.0222 122.106 29.2688C122.871 29.4908 123.586 29.8115 124.252 30.2308C124.943 30.6502 125.498 31.2052 125.917 31.8958C126.361 32.5865 126.583 33.4745 126.583 34.5598C126.583 36.3112 125.954 37.7048 124.696 38.7408C123.438 39.7522 121.724 40.2578 119.553 40.2578ZM135.994 40.2578C134.982 40.2578 133.983 40.1222 132.997 39.8508C132.035 39.5795 131.147 39.2095 130.333 38.7408C129.519 38.2475 128.816 37.6555 128.224 36.9648L131.11 34.0418C131.726 34.7325 132.442 35.2505 133.256 35.5958C134.07 35.9412 134.97 36.1138 135.957 36.1138C136.746 36.1138 137.338 36.0028 137.733 35.7808C138.152 35.5588 138.362 35.2258 138.362 34.7818C138.362 34.2885 138.14 33.9062 137.696 33.6348C137.276 33.3635 136.721 33.1415 136.031 32.9688C135.34 32.7715 134.612 32.5618 133.848 32.3398C133.108 32.0932 132.392 31.7848 131.702 31.4148C131.011 31.0202 130.444 30.4898 130 29.8238C129.58 29.1332 129.371 28.2452 129.371 27.1598C129.371 26.0252 129.642 25.0385 130.185 24.1998C130.752 23.3612 131.554 22.7075 132.59 22.2388C133.626 21.7702 134.847 21.5358 136.253 21.5358C137.733 21.5358 139.065 21.7948 140.249 22.3128C141.457 22.8308 142.456 23.6078 143.246 24.6438L140.323 27.5668C139.78 26.9008 139.163 26.4198 138.473 26.1238C137.807 25.8278 137.079 25.6798 136.29 25.6798C135.574 25.6798 135.019 25.7908 134.625 26.0128C134.255 26.2348 134.07 26.5432 134.07 26.9378C134.07 27.3818 134.279 27.7272 134.699 27.9738C135.143 28.2205 135.71 28.4425 136.401 28.6398C137.091 28.8125 137.807 29.0222 138.547 29.2688C139.311 29.4908 140.027 29.8115 140.693 30.2308C141.383 30.6502 141.938 31.2052 142.358 31.8958C142.802 32.5865 143.024 33.4745 143.024 34.5598C143.024 36.3112 142.395 37.7048 141.137 38.7408C139.879 39.7522 138.164 40.2578 135.994 40.2578Z"
+                  fill="white"
+                />
+                <path
+                  opacity="0.7"
+                  d="M25.3803 26.7532L22.1351 26.797C18.2732 26.8492 15.1003 23.7608 15.0481 19.8989V19.8989C14.9959 16.0371 18.0843 12.8641 21.9462 12.8119L37.9886 12.5952"
+                  stroke="#FFAA4C"
+                  stroke-width="8.44412"
+                  stroke-linecap="round"
+                />
+                <path
+                  opacity="0.7"
+                  d="M36.5708 40.9026L20.5198 40.8594C16.6616 40.849 13.5423 37.7128 13.5527 33.8546V33.8546C13.563 30.0039 16.6873 26.8877 20.538 26.8874L25.5062 26.8869"
+                  stroke="#2FDBBC"
+                  stroke-width="8.44412"
+                  stroke-linecap="round"
+                />
+                <path
+                  opacity="0.7"
+                  d="M36.6737 40.7686L26.4257 28.3075C25.5015 27.1837 25.5608 25.547 26.5641 24.493L37.9155 12.5679"
+                  stroke="#A64CED"
+                  stroke-width="8.44412"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="header__control">
+            <div class="control__business">
+              <button class="btn btn-primary s4-semi-bold " data-modal="open">Contact sales</button>
+            </div>
+            <div class="control__customers none">
+              <div class="btn-group">
+                <a class="btn-link" href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.89883 1.62087C1.6462 1.87871 1.5 2.28015 1.5 2.80002V21.3436C1.5 21.8635 1.6462 22.2649 1.89883 22.5227L1.96118 22.5793L12.6188 12.1923V11.9471L1.96118 1.56008L1.89883 1.62087Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M17.4573 15.6562L13.9087 12.1922V11.9469L17.4616 8.48283L17.5411 8.5279L21.7487 10.8621C22.9495 11.5245 22.9495 12.6146 21.7487 13.2812L17.5411 15.6112L17.4573 15.6562Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M16.8964 16.2563L13.2639 12.7147L2.54395 23.1677C2.94277 23.5765 3.59315 23.6257 4.33276 23.2169L16.8964 16.2563Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M16.8964 7.88292L4.33276 0.922272C3.59315 0.517693 2.94277 0.566953 2.54395 0.975726L13.2639 11.4246L16.8964 7.88292Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a class="btn-link" href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.8694 12.7314C17.8428 9.82565 20.2851 8.41202 20.3968 8.34621C19.0136 6.36009 16.8697 6.08872 16.1164 6.06708C14.3158 5.88046 12.5692 7.12821 11.652 7.12821C10.7165 7.12821 9.30401 6.08511 7.78171 6.11577C5.82277 6.14552 3.99015 7.26254 2.98505 8.99713C0.910769 12.5339 2.45778 17.7314 4.4451 20.5902C5.43922 21.9903 6.60086 23.5536 8.12133 23.4986C9.60884 23.4382 10.1645 22.5646 11.9596 22.5646C13.7382 22.5646 14.26 23.4986 15.8106 23.4634C17.4071 23.4382 18.4122 22.057 19.3715 20.6443C20.5203 19.0395 20.9817 17.4591 21 17.378C20.9625 17.3653 17.8996 16.2141 17.8694 12.7314Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M14.9401 4.18645C15.7401 3.20105 16.2876 1.86044 16.1356 0.5C14.9776 0.550487 13.5295 1.28886 12.6955 2.25262C11.9577 3.10188 11.2987 4.49388 11.4689 5.80293C12.7697 5.89849 14.1053 5.15652 14.9401 4.18645Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="control__burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__menu">
+        <div class="container">
+          <div class="menu">
+            <button class="btn btn-primary s4-semi-bold" data-modal="open">Contact sales</button>
+            <nav class="menu__nav">
+              <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link s5-medium" href="#">For Business</a></li>
+                <li class="menu__item"><a class="menu__link s5-medium" href="#">For Customers</a></li>
+                <li class="menu__item"><a class="menu__link s5-medium" href="#">Privacy Policy</a></li>
+                <li class="menu__item"><a class="menu__link s5-medium" href="#">Terms Of Use - Seller</a></li>
+                <li class="menu__item"><a class="menu__link s5-medium" href="#">Terms of Use - Sellers & Customers</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="hero breakout">
+          <div class="hero__info">
+            <h1 class="hero__title t2 text-white">Everyone is an Influencer</h1>
+            <p class="hero__text s3-regular text-white">
+              Budss is a payments as a service and WOM engine dedicated to acquisition and retention of customers to your business.
+            </p>
+            <button class="btn btn-primary s4-semi-bold" data-modal="open">Contact sales</button>
+          </div>
+          <picture class="hero__image">
+            <source
+              type="image/webp"
+              srcset="assets/images/hero_mobile.webp 1x, assets/images/hero_mobile@2x.webp 2x"
+              media="(max-width: 576px)"
+            >
+            <source type="image/webp" srcset="assets/images/hero.webp 1x, assets/images/hero@2x.webp 2x" >
+            <source
+              type="image/png"
+              srcset="assets/images/hero_mobile.png 1x, assets/images/hero_mobile@2x.png 2x"
+              media="(max-width: 576px)"
+            >
+            <img
+              src="assets/images/hero.png"
+              srcset="assets/images/hero.png, assets/images/hero@2x.png 2x"
+              alt="hero"
+              width="595"
+              height="529"
+              loading="lazy"
+            >
+          </picture>
+        </section>
+        <section class="about">
+          <h2 class="about__title t2 text-white">About Budss</h2>
+          <div class="about__content">
+            <div class="about__info">
+              <p class="about__subtitle s1-semi-bold text-white">
+                Payment as a service, powered seamlessly by our <span class="decoration">network of shoppers</span>
+              </p>
+              <picture class="about__image">
+                <source type="image/webp" srcset="assets/images/about.webp 1x, assets/images/about@2x.webp 2x" >
+                <img
+                  src="assets/images/about.png"
+                  srcset="assets/images/about.png, assets/images/about@2x.png 2x"
+                  alt="about image"
+                  width="423"
+                  height="489"
+                  loading="lazy"
+                >
+              </picture>
+            </div>
+            <div class="about__list">
+              <div class="about__item">
+                <div class="about__item-icon">
+                  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M39.4837 18.6725C41.0945 14.3194 47.2514 14.3194 48.8622 18.6725L55.3058 36.0861C55.8122 37.4547 56.8913 38.5337 58.2599 39.0401L75.6734 45.4837C80.0265 47.0945 80.0265 53.2514 75.6734 54.8622L58.2599 61.3058C56.8913 61.8122 55.8122 62.8913 55.3058 64.2599L48.8622 81.6734C47.2514 86.0265 41.0945 86.0265 39.4837 81.6734L33.0401 64.2599C32.5337 62.8913 31.4546 61.8122 30.0861 61.3058L12.6725 54.8622C8.31943 53.2514 8.31944 47.0945 12.6725 45.4837L30.0861 39.0401C31.4547 38.5337 32.5337 37.4546 33.0401 36.0861L39.4837 18.6725Z"
+                      stroke="#FFAA4C"
+                      stroke-width="10"
+                    />
+                  </svg>
+                </div>
+                <h3 class="about__item-title t4 text-white">Contactless</h3>
+                <p class="about__item-text s3-regular text-white">
+                  Budss uses near field communication (NFC) for making contactless payments.
+                </p>
+              </div>
+              <div class="about__item">
+                <div class="about__item-icon">
+                  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M28.5379 91.4598C0.135755 81.1294 8.37583 56.6971 31.0364 49.5112C59.3622 40.5288 57.636 76.0225 30.9347 67.1692C-12.4168 52.7953 17.1064 18.7788 39.9658 17.6989"
+                      stroke="#A64CED"
+                      stroke-width="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M31.8147 8.00837L44.5543 13.7312L38.8314 26.4708"
+                      stroke="#A64CED"
+                      stroke-width="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h3 class="about__item-title t4 text-white">Increased Buying Power</h3>
+                <p class="about__item-text s3-regular text-white">Returning customers spend up to 3X more.</p>
+              </div>
+              <div class="about__item">
+                <div class="about__item-icon">
+                  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.22705 69.1794L23.0731 30.8237L40.9191 69.1794L58.7651 30.8237L76.6111 69.1794L94.4572 30.8237"
+                      stroke="#2FDBBC"
+                      stroke-width="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h3 class="about__item-title t4 text-white">Analytics & Insights</h3>
+                <p class="about__item-text s3-regular text-white">
+                  Gain a holistic view into your customers’ buying behavior & purchasing patterns.
+                </p>
+              </div>
+              <div class="about__item">
+                <div class="about__item-icon">
+                  <svg width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5.70605" y="29.8506" width="55.8757" height="29.3462" rx="14.6731" stroke="#C1DB2F" stroke-width="10" />
+                    <rect
+                      x="37.0891"
+                      y="46.9663"
+                      width="55.8757"
+                      height="29.3462"
+                      rx="14.6731"
+                      transform="rotate(-22.1921 37.0891 46.9663)"
+                      stroke="#C1DB2F"
+                      stroke-width="10"
+                    />
+                  </svg>
+                </div>
+                <h3 class="about__item-title t4 text-white">Fraud Protection</h3>
+                <p class="about__item-text s3-regular text-white">
+                  Budss handles all payments with a fraud prevention algorithm to flag high risk purchases & a user set PIN code to keep
+                  payment info secure.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="work full-width-window">
+          <div class="work__smartphone smartphone">
+            <div class="smartphone__wrapper">
+              <video loop muted autoplay class="smartphone__video">
+                <source src="assets/video/phone.mp4" type="video/mp4" >
+                <source src="assets/video/phone.webm" type="video/webm">
+              </video>
+            </div>
+          </div>
+          <div class="work__marquee">
+            <div class="marquee">
+              <div class="marquee__group">
+                <p class="marquee__text t1">How Budss Works</p>
+                <p class="marquee__text marquee__text-contour t1">How Budss Works</p>
+              </div>
+              <div class="marquee__group">
+                <p class="marquee__text t1">How Budss Works</p>
+                <p class="marquee__text marquee__text-contour t1">How Budss Works</p>
+              </div>
+            </div>
+            <div class="marquee">
+              <div class="marquee__group marquee__group-reverse">
+                <p class="marquee__text t1">How Budss Works</p>
+                <p class="marquee__text marquee__text-contour t1">How Budss Works</p>
+              </div>
+              <div class="marquee__group marquee__group-reverse">
+                <p class="marquee__text t1">How Budss Works</p>
+                <p class="marquee__text marquee__text-contour t1">How Budss Works</p>
+              </div>
+            </div>
+            <div class="marquee">
+              <div class="marquee__group">
+                <p class="marquee__text t1">How Budss Works</p>
+                <p class="marquee__text marquee__text-contour t1">How Budss Works</p>
+              </div>
+              <div class="marquee__group">
+                <p class="marquee__text t1">How Budss Works</p>
+                <p class="marquee__text marquee__text-contour t1">How Budss Works</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="percent full-width">
+          <div class="percent__info info">
+            <div class="info__list text-white">
+              <div class="info__item">
+                <p class="info__percent t3">15%</p>
+                <p class="info__text s3-regular">Increase in Purchase Amount</p>
+              </div>
+              <div class="info__item">
+                <p class="info__percent t3">30%</p>
+                <p class="info__text s3-regular">Growth in Annual Sales</p>
+              </div>
+              <div class="info__item">
+                <p class="info__percent t3">10%</p>
+                <p class="info__text s3-regular">Growth in New Customers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="why">
+          <div class="why__header header">
+            <h2 class="header__title t3 text-white">Why Budss</h2>
+            <p class="header__text s1-semi-bold text-white">
+              We Provide Advanced Payment Solutions <span class="decoration">To Grow Your Business</span>
+            </p>
+          </div>
+          <div class="why__content">
+            <div class="why__item one">
+              <div class="why__info">
+                <h4 class="why__title t4">Turn your customers into loyal influencers</h4>
+                <p class="why__text s3-regular">
+                  Budss helps businesses harness the exponential power of loyal customers for acquisition and retention.
+                </p>
+              </div>
+              <picture class="why__image">
+                <source
+                  type="image/webp"
+                  srcset="assets/images/one_mobile.webp 1x, assets/images/one_mobile@2x.webp 2x"
+                  media="(max-width: 1221px)"
+                >
+                <source type="image/webp" srcset="assets/images/one.webp 1x, assets/images/one@2x.webp 2x" >
+                <source
+                  type="image/png"
+                  srcset="assets/images/one_mobile.png 1x, assets/images/one_mobile@2x.png 2x"
+                  media="(max-width: 1221px)"
+                >
+                <img
+                  src="assets/images/one.png"
+                  srcset="assets/images/one.png, assets/images/one@2x.png 2x"
+                  alt="one"
+                  width="318"
+                  height="362"
+                  loading="lazy"
+                >
+              </picture>
+            </div>
+            <div class="why__item two">
+              <div class="why__info">
+                <h4 class="why__title t4">Harness the power of buying in bulk</h4>
+                <p class="why__text s3-regular">
+                  Get at least 2X more sales with Budss Buying Groups. Your customer base will grow exponentially as your customers add
+                  their friends & family to your personalized group.
+                </p>
+              </div>
+              <picture class="why__image">
+                <source
+                  type="image/webp"
+                  srcset="assets/images/two_mobile.webp 1x, assets/images/two_mobile@2x.webp 2x"
+                  media="(max-width: 1221px)"
+                >
+                <source type="image/webp" srcset="assets/images/two.webp 1x, assets/images/two@2x.webp 2x" >
+                <source
+                  type="image/png"
+                  srcset="assets/images/two_mobile.png 1x, assets/images/two_mobile@2x.png 2x"
+                  media="(max-width: 1221px)"
+                >
+                <img
+                  src="assets/images/two.png"
+                  srcset="assets/images/two.png, assets/images/two@2x.png 2x"
+                  alt="two"
+                  width="475"
+                  height="282"
+                  loading="lazy"
+                >
+              </picture>
+            </div>
+            <div class="why__item three">
+              <div class="why__info">
+                <h4 class="why__title t4">Supercharge Loyalty With Instant Cash Back</h4>
+                <p class="why__text s3-regular">Budss allows for shoppers to earn immediate cash back at their favorite stores.</p>
+              </div>
+              <picture class="why__image">
+                <source type="image/webp" srcset="assets/images/three.webp 1x, assets/images/three@2x.webp 2x">
+                <img
+                  src="assets/images/three.png"
+                  srcset="assets/images/three.png, assets/images/three@2x.png 2x"
+                  alt="three"
+                  width="202"
+                  height="83"
+                  loading="lazy"
+                >
+              </picture>
+            </div>
+            <div class="why__item four">
+              <div class="why__info">
+                <h4 class="why__title t4">Seasoned with AI and Gamification</h4>
+                <p class="why__text s3-regular">
+                  AI programming creates a personalized customer journey, offering recommendations for their next purchase and optimizing
+                  rewards for after purchase.
+                </p>
+              </div>
+              <picture class="why__image">
+                <source type="image/webp" srcset="assets/images/four.webp 1x, assets/images/four@2x.webp 2x">
+                <img
+                  src="assets/images/four.png"
+                  srcset="assets/images/four.png, assets/images/four@2x.png 2x"
+                  alt="four"
+                  width="210"
+                  height="301"
+                  loading="lazy"
+                >
+              </picture>
+            </div>
+          </div>
+        </section>
+        <div class="bg-light full-width">
+          <section class="call">
+            <div class="call__wrapper">
+              <h3 class="call__title t3">Let Your Business Grow</h3>
+              <button class="btn btn-primary s4-semi-bold" data-modal="open">Contact sales</button>
+            </div>
+          </section>
+          <section class="digitalMarketing">
+            <div class="digitalMarketing__wrapper">
+              <div class="digitalMarketing__info">
+                <h2 class="digitalMarketing__title t2">Your Brand Awareness Maters</h2>
+                <p class="digitalMarketing__text s6-regular">
+                  Budss is a husle free solution to put your brand on any digital surface including Instagram, Facebook, Twitter and TikTok
+                </p>
+              </div>
+              <div class="digitalMarketing__icons">
+                <div class="digitalMarketing__icon">
+                  <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_8457)">
+                      <path
+                        d="M90 45C90 20.1472 69.8528 0 45 0C20.1472 0 0 20.1472 0 45C0 67.4605 16.4558 86.0774 37.9688 89.4533V58.0078H26.543V45H37.9688V35.0859C37.9688 23.8078 44.6871 17.5781 54.9659 17.5781C59.8878 17.5781 65.0391 18.457 65.0391 18.457V29.5313H59.3648C53.775 29.5313 52.0312 33.0003 52.0312 36.5625V45H64.5117L62.5166 58.0078H52.0312V89.4533C73.5442 86.0774 90 67.4605 90 45Z"
+                        fill="#954CED"
+                      />
+                      <path
+                        d="M62.5166 58.0078L64.5117 45H52.0312V36.5625C52.0312 33.0038 53.775 29.5312 59.3648 29.5312H65.0391V18.457C65.0391 18.457 59.8896 17.5781 54.9659 17.5781C44.6871 17.5781 37.9688 23.8078 37.9688 35.0859V45H26.543V58.0078H37.9688V89.4533C42.6279 90.1822 47.3721 90.1822 52.0312 89.4533V58.0078H62.5166Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_8457">
+                        <rect width="90" height="90" rx="45" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="digitalMarketing__icon">
+                  <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="90" height="90" rx="45" fill="#954CED" />
+                    <g clip-path="url(#clip0_1_8458)">
+                      <path
+                        d="M36.8719 63.6631C53.9553 63.6631 63.2991 49.5097 63.2991 37.236C63.2991 36.834 63.2991 36.4338 63.2719 36.0354C65.0897 34.7206 66.6588 33.0926 67.9058 31.2277C66.2108 31.9792 64.4125 32.4718 62.5712 32.689C64.5102 31.5283 65.9614 29.7026 66.6546 27.5517C64.8314 28.6337 62.8367 29.3961 60.7567 29.8062C59.3563 28.3171 57.5042 27.3311 55.487 27.0007C53.4697 26.6703 51.3998 27.0139 49.5976 27.9785C47.7954 28.943 46.3612 30.4746 45.5172 32.3363C44.6731 34.198 44.4661 36.286 44.9283 38.2772C41.2356 38.092 37.6231 37.1323 34.3254 35.4605C31.0276 33.7886 28.1182 31.442 25.7861 28.573C24.5984 30.6177 24.2346 33.0382 24.7688 35.3417C25.3031 37.6452 26.6952 39.6585 28.6617 40.9717C27.1835 40.9284 25.7375 40.5296 24.4461 39.8091V39.9269C24.4467 42.0713 25.189 44.1495 26.5471 45.8089C27.9053 47.4684 29.7957 48.6071 31.8976 49.0317C30.5302 49.4047 29.0955 49.4592 27.7037 49.191C28.2975 51.0364 29.4531 52.6501 31.0089 53.8066C32.5647 54.9631 34.443 55.6045 36.3812 55.6412C34.4555 57.1549 32.2502 58.274 29.8915 58.9346C27.5328 59.5952 25.0671 59.7843 22.6353 59.491C26.8828 62.2167 31.825 63.6625 36.8719 63.6559"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_8458">
+                        <rect width="45.2706" height="45.2706" fill="white" transform="translate(22.6353 22.6354)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="digitalMarketing__icon">
+                  <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="90" height="90" rx="45" fill="#954CED" />
+                    <g clip-path="url(#clip0_1_8460)">
+                      <path
+                        d="M45.2705 26.7114C51.3184 26.7114 52.0346 26.738 54.4131 26.8441C56.6236 26.9413 57.8172 27.3127 58.613 27.6222C59.6652 28.0289 60.4256 28.524 61.2125 29.311C62.0083 30.1067 62.4946 30.8583 62.9013 31.9105C63.2108 32.7063 63.5821 33.9088 63.6794 36.1104C63.7855 38.4977 63.812 39.2139 63.812 45.2529C63.812 51.3008 63.7855 52.017 63.6794 54.3955C63.5821 56.6059 63.2108 57.7996 62.9013 58.5954C62.4946 59.6476 61.9994 60.408 61.2125 61.1949C60.4167 61.9907 59.6652 62.477 58.613 62.8837C57.8172 63.1932 56.6147 63.5645 54.4131 63.6618C52.0258 63.7679 51.3096 63.7944 45.2705 63.7944C39.2227 63.7944 38.5065 63.7679 36.128 63.6618C33.9175 63.5645 32.7239 63.1932 31.9281 62.8837C30.8759 62.477 30.1155 61.9818 29.3286 61.1949C28.5328 60.3991 28.0465 59.6476 27.6398 58.5954C27.3303 57.7996 26.9589 56.5971 26.8617 54.3955C26.7556 52.0082 26.7291 51.292 26.7291 45.2529C26.7291 39.2051 26.7556 38.4889 26.8617 36.1104C26.9589 33.8999 27.3303 32.7063 27.6398 31.9105C28.0465 30.8583 28.5417 30.0979 29.3286 29.311C30.1244 28.5152 30.8759 28.0289 31.9281 27.6222C32.7239 27.3127 33.9264 26.9413 36.128 26.8441C38.5065 26.738 39.2227 26.7114 45.2705 26.7114ZM45.2705 22.6353C39.1254 22.6353 38.3562 22.6618 35.9423 22.7679C33.5373 22.874 31.8839 23.2631 30.4515 23.8201C28.9572 24.4037 27.6928 25.1729 26.4373 26.4373C25.1729 27.6929 24.4036 28.9573 23.8201 30.4427C23.263 31.884 22.874 33.5286 22.7679 35.9335C22.6618 38.3562 22.6353 39.1255 22.6353 45.2706C22.6353 51.4157 22.6618 52.185 22.7679 54.5988C22.874 57.0038 23.263 58.6573 23.8201 60.0897C24.4036 61.5839 25.1729 62.8483 26.4373 64.1039C27.6928 65.3594 28.9572 66.1375 30.4427 66.7122C31.8839 67.2693 33.5285 67.6583 35.9335 67.7644C38.3473 67.8705 39.1166 67.8971 45.2617 67.8971C51.4068 67.8971 52.1761 67.8705 54.5899 67.7644C56.9949 67.6583 58.6484 67.2693 60.0808 66.7122C61.5662 66.1375 62.8306 65.3594 64.0861 64.1039C65.3417 62.8483 66.1198 61.5839 66.6945 60.0985C67.2515 58.6573 67.6406 57.0127 67.7467 54.6077C67.8528 52.1938 67.8793 51.4246 67.8793 45.2795C67.8793 39.1343 67.8528 38.3651 67.7467 35.9512C67.6406 33.5462 67.2515 31.8928 66.6945 30.4604C66.1375 28.9573 65.3682 27.6929 64.1038 26.4373C62.8483 25.1818 61.5839 24.4037 60.0984 23.829C58.6572 23.2719 57.0126 22.8829 54.6076 22.7768C52.1849 22.6618 51.4157 22.6353 45.2705 22.6353Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M45.2707 33.6435C38.8514 33.6435 33.6436 38.8514 33.6436 45.2706C33.6436 51.6898 38.8514 56.8977 45.2707 56.8977C51.6899 56.8977 56.8978 51.6898 56.8978 45.2706C56.8978 38.8514 51.6899 33.6435 45.2707 33.6435ZM45.2707 52.8128C41.1061 52.8128 37.7285 49.4351 37.7285 45.2706C37.7285 41.1061 41.1061 37.7285 45.2707 37.7285C49.4352 37.7285 52.8128 41.1061 52.8128 45.2706C52.8128 49.4351 49.4352 52.8128 45.2707 52.8128Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M60.072 33.1836C60.072 34.6868 58.8518 35.8981 57.3575 35.8981C55.8544 35.8981 54.6431 34.6779 54.6431 33.1836C54.6431 31.6805 55.8633 30.4692 57.3575 30.4692C58.8518 30.4692 60.072 31.6894 60.072 33.1836Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_8460">
+                        <rect width="45.2706" height="45.2706" fill="white" transform="translate(22.6353 22.6353)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="digitalMarketing__icon">
+                  <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="90" height="90" rx="45" fill="#954CED" />
+                    <g clip-path="url(#clip0_1_8462)">
+                      <path
+                        d="M54.8386 22.6354H47.2092V53.4718C47.2092 57.146 44.2749 60.1641 40.6232 60.1641C36.9715 60.1641 34.0371 57.146 34.0371 53.4718C34.0371 49.8634 36.9063 46.9108 40.4276 46.7797V39.0378C32.6677 39.1689 26.4077 45.5331 26.4077 53.4718C26.4077 61.4763 32.7981 67.906 40.6884 67.906C48.5786 67.906 54.969 61.4106 54.969 53.4718V37.6599C57.8382 39.7595 61.3594 41.0061 65.0763 41.0717V33.3297C59.338 33.1329 54.8386 28.409 54.8386 22.6354Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_8462">
+                        <rect width="45.2706" height="45.2706" fill="white" transform="translate(22.6353 22.6354)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="logos">
+            <div class="logos__list">
+              <picture class="logos__item">
+                <source type="image/webp" srcset="assets/images/logo_1.webp 1x, assets/images/logo_1@2x.webp 2x" >
+                <img
+                  src="assets/images/logo_1.png"
+                  srcset="assets/images/logo_1.png, assets/images/logo_1@2x.png 2x"
+                  alt="logo_1"
+                  loading="lazy"
+                  width="124"
+                  height="59"
+                >
+              </picture>
+              <picture class="logos__item">
+                <source type="image/webp" srcset="assets/images/logo_2.webp 1x, assets/images/logo_2@2x.webp 2x" >
+                <img
+                  src="assets/images/logo_2.png"
+                  srcset="assets/images/logo_2.png, assets/images/logo_2@2x.png 2x"
+                  alt="logo_2"
+                  loading="lazy"
+                  width="209"
+                  height="60"
+                >
+              </picture>
+              <picture class="logos__item">
+                <source type="image/webp" srcset="assets/images/logo_3.webp 1x, assets/images/logo_3@2x.webp 2x" >
+                <img
+                  src="assets/images/logo_3.png"
+                  srcset="assets/images/logo_3.png, assets/images/logo_3@2x.png 2x"
+                  alt="logo_3"
+                  loading="lazy"
+                  width="182"
+                  height="48"
+                >
+              </picture>
+              <picture class="logos__item">
+                <source type="image/webp" srcset="assets/images/logo_4.webp 1x, assets/images/logo_4@2x.webp 2x" >
+                <img
+                  src="assets/images/logo_4.png"
+                  srcset="assets/images/logo_4.png, assets/images/logo_4@2x.png 2x"
+                  alt="logo_4"
+                  loading="lazy"
+                  width="277"
+                  height="40"
+                >
+              </picture>
+              <picture class="logos__item">
+                <source type="image/webp" srcset="assets/images/logo_5.webp 1x, assets/images/logo_5@2x.webp 2x" >
+                <img
+                  src="assets/images/logo_5.png"
+                  srcset="assets/images/logo_5.png, assets/images/logo_5@2x.png 2x"
+                  alt="logo_5"
+                  loading="lazy"
+                  width="184"
+                  height="44"
+                >
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__navbar">
+            <div class="footer__logo">
+              <a href="#">
+                <svg width="157" height="53" viewBox="0 0 157 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M60.2756 40.2208C58.9929 40.2208 57.8336 39.9495 56.7976 39.4068C55.7616 38.8642 54.9352 38.1242 54.3186 37.1868C53.7019 36.2495 53.3689 35.2012 53.3196 34.0418V27.6778C53.3689 26.5185 53.7019 25.4825 54.3186 24.5698C54.9599 23.6325 55.7986 22.9048 56.8346 22.3868C57.8706 21.8688 59.0176 21.6098 60.2756 21.6098C61.9282 21.6098 63.4082 22.0168 64.7156 22.8308C66.0229 23.6448 67.0466 24.7548 67.7866 26.1608C68.5512 27.5668 68.9336 29.1578 68.9336 30.9338C68.9336 32.6852 68.5512 34.2638 67.7866 35.6698C67.0466 37.0758 66.0229 38.1858 64.7156 38.9998C63.4082 39.8138 61.9282 40.2208 60.2756 40.2208ZM59.4616 35.7438C60.3496 35.7438 61.1266 35.5465 61.7926 35.1518C62.4832 34.7325 63.0136 34.1652 63.3836 33.4498C63.7782 32.7098 63.9756 31.8588 63.9756 30.8968C63.9756 29.9595 63.7782 29.1332 63.3836 28.4178C63.0136 27.6778 62.4832 27.1105 61.7926 26.7158C61.1019 26.2965 60.3126 26.0868 59.4246 26.0868C58.5366 26.0868 57.7472 26.2965 57.0566 26.7158C56.3906 27.1105 55.8602 27.6778 55.4656 28.4178C55.0956 29.1332 54.9106 29.9595 54.9106 30.8968C54.9106 31.8588 55.0956 32.7098 55.4656 33.4498C55.8602 34.1652 56.4029 34.7325 57.0936 35.1518C57.7842 35.5465 58.5736 35.7438 59.4616 35.7438ZM50.3596 39.8508V13.0998H55.2066V26.3828L54.3926 30.6748L55.1696 35.0408V39.8508H50.3596ZM79.7335 40.2208C78.1549 40.2208 76.7489 39.8878 75.5155 39.2218C74.3069 38.5558 73.3572 37.6308 72.6665 36.4468C71.9759 35.2628 71.6305 33.8938 71.6305 32.3398V21.9798H76.5145V32.2288C76.5145 32.9688 76.6379 33.6102 76.8845 34.1528C77.1312 34.6708 77.5012 35.0655 77.9945 35.3368C78.4879 35.6082 79.0675 35.7438 79.7335 35.7438C80.7449 35.7438 81.5342 35.4355 82.1015 34.8188C82.6689 34.2022 82.9525 33.3388 82.9525 32.2288V21.9798H87.7995V32.3398C87.7995 33.9185 87.4542 35.2998 86.7635 36.4838C86.0975 37.6678 85.1479 38.5928 83.9145 39.2588C82.7059 39.9002 81.3122 40.2208 79.7335 40.2208ZM99.2074 40.2208C97.5547 40.2208 96.0747 39.8138 94.7674 38.9998C93.46 38.1858 92.424 37.0758 91.6594 35.6698C90.9194 34.2638 90.5494 32.6852 90.5494 30.9338C90.5494 29.1578 90.9194 27.5668 91.6594 26.1608C92.424 24.7548 93.4477 23.6448 94.7304 22.8308C96.0377 22.0168 97.53 21.6098 99.2074 21.6098C100.49 21.6098 101.637 21.8688 102.648 22.3868C103.684 22.9048 104.511 23.6325 105.127 24.5698C105.769 25.4825 106.114 26.5185 106.163 27.6778V34.0418C106.114 35.2012 105.781 36.2495 105.164 37.1868C104.548 38.1242 103.721 38.8642 102.685 39.4068C101.649 39.9495 100.49 40.2208 99.2074 40.2208ZM100.021 35.7438C100.934 35.7438 101.723 35.5465 102.389 35.1518C103.08 34.7325 103.61 34.1652 103.98 33.4498C104.375 32.7098 104.572 31.8588 104.572 30.8968C104.572 29.9595 104.375 29.1332 103.98 28.4178C103.61 27.6778 103.08 27.1105 102.389 26.7158C101.723 26.2965 100.946 26.0868 100.058 26.0868C99.1457 26.0868 98.344 26.2965 97.6534 26.7158C96.9874 27.1352 96.457 27.7025 96.0624 28.4178C95.6924 29.1332 95.5074 29.9595 95.5074 30.8968C95.5074 31.8588 95.6924 32.7098 96.0624 33.4498C96.457 34.1652 96.9997 34.7325 97.6904 35.1518C98.381 35.5465 99.158 35.7438 100.021 35.7438ZM109.123 39.8508H104.313V35.0408L105.09 30.6748L104.276 26.3828V13.0998H109.123V39.8508ZM119.553 40.2578C118.542 40.2578 117.543 40.1222 116.556 39.8508C115.594 39.5795 114.706 39.2095 113.892 38.7408C113.078 38.2475 112.375 37.6555 111.783 36.9648L114.669 34.0418C115.286 34.7325 116.001 35.2505 116.815 35.5958C117.629 35.9412 118.53 36.1138 119.516 36.1138C120.306 36.1138 120.898 36.0028 121.292 35.7808C121.712 35.5588 121.921 35.2258 121.921 34.7818C121.921 34.2885 121.699 33.9062 121.255 33.6348C120.836 33.3635 120.281 33.1415 119.59 32.9688C118.9 32.7715 118.172 32.5618 117.407 32.3398C116.667 32.0932 115.952 31.7848 115.261 31.4148C114.571 31.0202 114.003 30.4898 113.559 29.8238C113.14 29.1332 112.93 28.2452 112.93 27.1598C112.93 26.0252 113.202 25.0385 113.744 24.1998C114.312 23.3612 115.113 22.7075 116.149 22.2388C117.185 21.7702 118.406 21.5358 119.812 21.5358C121.292 21.5358 122.624 21.7948 123.808 22.3128C125.017 22.8308 126.016 23.6078 126.805 24.6438L123.882 27.5668C123.34 26.9008 122.723 26.4198 122.032 26.1238C121.366 25.8278 120.639 25.6798 119.849 25.6798C119.134 25.6798 118.579 25.7908 118.184 26.0128C117.814 26.2348 117.629 26.5432 117.629 26.9378C117.629 27.3818 117.839 27.7272 118.258 27.9738C118.702 28.2205 119.27 28.4425 119.96 28.6398C120.651 28.8125 121.366 29.0222 122.106 29.2688C122.871 29.4908 123.586 29.8115 124.252 30.2308C124.943 30.6502 125.498 31.2052 125.917 31.8958C126.361 32.5865 126.583 33.4745 126.583 34.5598C126.583 36.3112 125.954 37.7048 124.696 38.7408C123.438 39.7522 121.724 40.2578 119.553 40.2578ZM135.994 40.2578C134.982 40.2578 133.983 40.1222 132.997 39.8508C132.035 39.5795 131.147 39.2095 130.333 38.7408C129.519 38.2475 128.816 37.6555 128.224 36.9648L131.11 34.0418C131.726 34.7325 132.442 35.2505 133.256 35.5958C134.07 35.9412 134.97 36.1138 135.957 36.1138C136.746 36.1138 137.338 36.0028 137.733 35.7808C138.152 35.5588 138.362 35.2258 138.362 34.7818C138.362 34.2885 138.14 33.9062 137.696 33.6348C137.276 33.3635 136.721 33.1415 136.031 32.9688C135.34 32.7715 134.612 32.5618 133.848 32.3398C133.108 32.0932 132.392 31.7848 131.702 31.4148C131.011 31.0202 130.444 30.4898 130 29.8238C129.58 29.1332 129.371 28.2452 129.371 27.1598C129.371 26.0252 129.642 25.0385 130.185 24.1998C130.752 23.3612 131.554 22.7075 132.59 22.2388C133.626 21.7702 134.847 21.5358 136.253 21.5358C137.733 21.5358 139.065 21.7948 140.249 22.3128C141.457 22.8308 142.456 23.6078 143.246 24.6438L140.323 27.5668C139.78 26.9008 139.163 26.4198 138.473 26.1238C137.807 25.8278 137.079 25.6798 136.29 25.6798C135.574 25.6798 135.019 25.7908 134.625 26.0128C134.255 26.2348 134.07 26.5432 134.07 26.9378C134.07 27.3818 134.279 27.7272 134.699 27.9738C135.143 28.2205 135.71 28.4425 136.401 28.6398C137.091 28.8125 137.807 29.0222 138.547 29.2688C139.311 29.4908 140.027 29.8115 140.693 30.2308C141.383 30.6502 141.938 31.2052 142.358 31.8958C142.802 32.5865 143.024 33.4745 143.024 34.5598C143.024 36.3112 142.395 37.7048 141.137 38.7408C139.879 39.7522 138.164 40.2578 135.994 40.2578Z"
+                    fill="white"
+                  />
+                  <path
+                    opacity="0.7"
+                    d="M25.3803 26.7532L22.1351 26.797C18.2732 26.8492 15.1003 23.7608 15.0481 19.8989V19.8989C14.9959 16.0371 18.0843 12.8641 21.9462 12.8119L37.9886 12.5952"
+                    stroke="#FFAA4C"
+                    stroke-width="8.44412"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    opacity="0.7"
+                    d="M36.5708 40.9026L20.5198 40.8594C16.6616 40.849 13.5423 37.7128 13.5527 33.8546V33.8546C13.563 30.0039 16.6873 26.8877 20.538 26.8874L25.5062 26.8869"
+                    stroke="#2FDBBC"
+                    stroke-width="8.44412"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    opacity="0.7"
+                    d="M36.6737 40.7686L26.4257 28.3075C25.5015 27.1837 25.5608 25.547 26.5641 24.493L37.9155 12.5679"
+                    stroke="#A64CED"
+                    stroke-width="8.44412"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <nav class="footer__menu">
+              <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link s5-medium text-white" href="#">For Business</a></li>
+                <li class="footer__item"><a class="footer__link s5-medium text-white" href="#">For Customers</a></li>
+                <li class="footer__item"><a class="footer__link s5-medium text-white" href="#">Privacy Policy</a></li>
+                <li class="footer__item"><a class="footer__link s5-medium text-white" href="#">Terms Of Use - Seller</a></li>
+                <li class="footer__item"><a class="footer__link s5-medium text-white" href="#">Terms of Use - Sellers & Customers</a></li>
+              </ul>
+            </nav>
+            <div class="footer__btns">
+              <button class="btn btn-secondary s4-semi-bold" data-modal="open">Contact sales</button>
+              <div class="footer__store">
+                <a href="https://www.apple.com/app-store/" target="_blank" class="footer__store-link">
+                  <picture>
+                    <source type="image/webp" srcset="assets/images/appstore.webp 1x, assets/images/appstore@2x.webp 2x" >
+                    <img
+                      src="assets/images/appstore.png"
+                      srcset="assets/images/appstore.png, assets/images/appstore@2x.png 2x"
+                      alt="App Store"
+                      width="194"
+                      height="57"
+                    >
+                  </picture>
+                </a>
+                <a href="https://play.google.com/store/apps?hl=ru&gl=US" target="_blank" class="footer__store-link">
+                  <picture>
+                    <source type="image/webp" srcset="assets/images/googleplay.webp 1x, assets/images/googleplay@2x.webp 2x" >
+                    <img
+                      src="assets/images/googleplay.png"
+                      srcset="assets/images/googleplay.png, assets/images/googleplay@2x.png 2x"
+                      alt="Google Play"
+                      width="194"
+                      height="57"
+                    >
+                  </picture>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__line"></div>
+          <div class="footer__copyright">
+            <p class="footer__copyright-text b6-light">© Copyright 2023, All Rights Reserved by Budss</p>
+            <nav>
+              <ul class="footer__copyright-list">
+                <li class="footer__copyright-item"><a class="footer__copyright-link b6-light" href="#">Privacy Policy</a></li>
+                <li class="footer__copyright-item"><a class="footer__copyright-link b6-light" href="#">Terms Of Use - Seller</a></li>
+                <li class="footer__copyright-item">
+                  <a class="footer__copyright-link b6-light" href="#">Terms of Use - Sellers & Customers</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="cookie container">
+      <div class="cookie__wrapper bg-light">
+        <button class="cookie__close btn-close"></button>
+        <p class="cookie__text s7-light">This website uses cookies to ensure you get thebest experience on our website. They also allow us to analyze user behavior inorder to constantly improve the website for you.</p>
+        <div class="cookie__buttons">
+          <button class="cookie__button btn btn-primary s4-semi-bold">Accept</button>
+          <button class="cookie__button btn btn-secondary s4-semi-bold">Decline</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__content">
+        <button class="modal__close btn-close"></button>
+        <form class="modal__form form">
+          <div class="form__fields">
+            <div class="form__field">
+              <label class="form__label b3-medium" for="name">Name <span class="form__required">*</span></label>
+              <input class="form__input" type="text" name="name" id="name"  placeholder="Enter name" autocomplete="off">
+            </div>
+            <div class="form__field">
+              <label class="form__label b3-medium" for="email">Email <span class="form__required">*</span></label>
+              <input class="form__input" type="email" name="email" id="email"  placeholder="Enter email" autocomplete="off">
+            </div>
+            <div class="form__field">
+              <label class="form__label b3-medium" for="phone">Phone number <span class="form__required">*</span></label>
+              <div class="form__phone-country"></div>
+              <input class="form__input" type="tel" name="phone" id="phone" maxlength="18" placeholder="+7 (999) 999-99-99" autocomplete="off">
+            </div>
+            <div class="form__field">
+              <label class="form__label b3-medium" for="company">Company</label>
+              <input class="form__input" type="text" name="company" id="company" placeholder="Enter company">
+            </div>
+            <div class="form__field">
+              <label class="form__label b3-medium" for="website/store">Website/Store URL</label>
+              <input class="form__input" type="text" name="website/store" id="website/store" placeholder="Enter Website/Store URL">
+            </div>
+          </div>
+          <p class="form__text approval b5-light">By submitting this form you are agreeing to Budss’s <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a></p>
+          <button type="submit" class="form__button btn btn-primary s4-semi-bold">Contact sales</button>
+        </form>
+        <div class="modal__success success none">
+          <picture class="success__image">
+            <source type="image/webp" srcset="assets/images/success.webp 1x, assets/images/success@2x.webp 2x" >
+            <img src="assets/images/success.png" srcset="assets/images/success.png, assets/images/success@2x.png 2x" alt="success" loading="lazy" width="297" height="232">
+          </picture>
+          <h3 class="success__title s1-semi-bold">Thank you!</h3>
+          <p class="success__text s3-regular">Thank you, we have received your application and will contact you soon!</p>
+          <button class="success__button btn btn-primary s4-semi-bold">Super!</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

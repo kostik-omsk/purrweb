@@ -1,0 +1,154 @@
+.footer__wrapper {
+  padding: 40px 0 20px;
+}
+
+.footer__navbar {
+  display: flex;
+  align-items: center;
+}
+
+.footer__menu {
+  margin-left: clamp(1rem, -33.063rem + 45.417vw, 7.813rem);
+  margin-right: clamp(1rem, -32.125rem + 44.167vw, 7.625rem);
+}
+
+.footer__list {
+  display: flex;
+  gap: 40px;
+}
+
+.footer__list .footer__item:nth-child(3),
+.footer__list .footer__item:nth-child(4),
+.footer__list .footer__item:nth-child(5) {
+  display: none;
+}
+
+.footer__link {
+  transition: all 0.3s;
+}
+
+.footer__link:hover {
+  color: var(--primary-02);
+}
+
+.footer__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__store {
+  display: flex;
+  margin-left: 40px;
+}
+
+.footer__store-link + .footer__store-link {
+  margin-left: 16px;
+}
+
+.footer__store-link {
+  display: inline-block;
+}
+
+.footer__store-link:hover {
+  filter: drop-shadow(0 0 5px var(--primary-01));
+}
+
+.footer__line {
+  margin-top: 25px;
+  margin-bottom: 8px;
+  width: 100%;
+  height: 1px;
+  background: var(--grayscale-03);
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright-text {
+  color: var(--grayscale-03);
+}
+
+.footer__copyright-list {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__copyright-link {
+  color: var(--grayscale-03);
+  text-decoration-line: underline;
+}
+
+.footer__copyright-link:hover {
+  color: var(--primary-02);
+}
+
+@media only screen and (max-width: 1248px) {
+  .footer__navbar {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 876px) {
+  .footer__navbar {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer__list {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .footer__list .footer__item:nth-child(3),
+  .footer__list .footer__item:nth-child(4),
+  .footer__list .footer__item:nth-child(5) {
+    display: block;
+  }
+
+  .footer__copyright-list {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer__wrapper {
+    padding: 14px 0 5px;
+  }
+
+  .footer__navbar {
+    gap: 30px;
+  }
+
+  .footer__logo svg {
+    width: 125px;
+  }
+
+  .footer__menu {
+    margin: 0px 0 11px;
+  }
+
+  .footer__btns,
+  .footer__store {
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+  }
+
+  .footer__store {
+    gap: 20px;
+    margin: 37px 0 0;
+  }
+
+  .footer__store-link + .footer__store-link {
+    margin-left: 0;
+  }
+
+  .footer__line {
+    margin-top: 33px;
+    margin-bottom: 0px;
+  }
+}
